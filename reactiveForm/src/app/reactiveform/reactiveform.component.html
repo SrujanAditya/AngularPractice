@@ -1,0 +1,20 @@
+<div class="container">
+    <form 
+    [formGroup]="signUp"
+    (ngSubmit)="onSubmit()">
+      <input type="text" placeholder="User Name" class="form-control" formControlName="userName">
+      <div *ngIf = "signUp.controls['userName'].invalid && signUp.controls['userName'].dirty || signUp.controls['userName'].touched">
+        <div *ngIf = "signUp.controls['userName']?.errors?.required">
+          Name Required
+        </div>
+        <div *ngIf = "signUp.controls['userName']?.errors?.minlength">
+            min length 4 is required
+          </div>
+      </div>
+      <input type="text" placeholder="Email" class="form-control" formControlName="email">
+      <input type="password" placeholder="Password" class="form-control" formControlName="password">
+      <input type="password" placeholder="Confirm Password" class="form-control" formControlName="confirmPass">
+      <button type="submit" class="form-control" *ngIf="signUp.valid">Sign Up</button>
+    </form>
+  
+  </div>

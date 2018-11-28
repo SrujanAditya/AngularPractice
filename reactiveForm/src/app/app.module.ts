@@ -1,22 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegisterationComponent } from './registeration/registeration.component';
-import { ReactiveComponent } from './reactive/reactive.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterationComponent,
-    ReactiveComponent
+    ReactiveformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     ReactiveFormsModule
   ],
   providers: [],
