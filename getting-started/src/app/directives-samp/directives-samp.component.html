@@ -1,0 +1,29 @@
+<h1>ngIf</h1>
+<div *ngIf="check==true">Condition is true</div>
+<div *ngIf="check==false">Condition is false</div>
+
+<br><br>
+
+<h1>ngSwitch</h1>
+<div [ngSwitch]="switchValue">
+  <div *ngSwitchCase = 1 > Case 1</div>
+  <div *ngSwitchCase = 2 > Case 2</div>
+  <div *ngSwitchDefault  > Default</div>
+</div>
+
+<br><br>
+<h1>ngFor</h1>
+<div *ngFor="let record of data;even as isEven;" [ngStyle]="{'background-color':isEven?'yellow':'red'}">
+  {{record.id}},{{record.name}},{{record.age}}
+</div>
+
+<br><br>
+<h1> Custom Directives </h1>
+<p appCustomDir> Highlighter</p>
+
+<br><br>
+<h1>Task</h1>
+<div appCustomDir appCustomFadeDir >Div1</div>
+<div appCustomFadeDir appCustomDir >Div2</div>
+<div appCustomDir appCustomFadeDir >Div3</div>
+<div appCustomFadeDir appCustomDir >Div4</div>
