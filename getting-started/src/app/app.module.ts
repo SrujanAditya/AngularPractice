@@ -8,6 +8,8 @@ import { ChildComponent } from './child/child.component';
 import { DirectivesSampComponent } from './directives-samp/directives-samp.component';
 import { CustomDirDirective } from './custom-dir.directive';
 import { CustomFadeDirDirective } from './custom-fade-dir.directive';
+import { CustomPipePipe } from './custom-pipe.pipe';
+import { ReversePipe } from './reverse.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CustomFadeDirDirective } from './custom-fade-dir.directive';
     ChildComponent,
     DirectivesSampComponent,
     CustomDirDirective,
-    CustomFadeDirDirective
+    CustomFadeDirDirective,
+    CustomPipePipe,
+    ReversePipe
   ],
   imports: [
     BrowserModule,

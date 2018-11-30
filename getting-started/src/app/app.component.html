@@ -1,1 +1,12 @@
-<app-directives-samp></app-directives-samp>
+<!-- <app-parent></app-parent>
+<app-directives-samp></app-directives-samp> -->
+<p>
+    <img [src]="'' |customPipe:'https://picsum.photos/200/300/?random'"/>
+    <br>
+    <img [src]="'' |customPipe:'://picsum.photos/200/300/?random':true"/>
+</p>
+<p>{{1233.45 | currency:'USD'}}</p>
+
+<p>
+    {{"Jackson" | reverse }}
+</p>
