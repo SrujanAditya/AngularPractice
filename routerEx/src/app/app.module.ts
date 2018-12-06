@@ -1,22 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { ProdHomeComponent } from './prod-home/prod-home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ReactiveformComponent,
-    ProdHomeComponent
+    ProdHomeComponent,
+    PageNotFoundComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
